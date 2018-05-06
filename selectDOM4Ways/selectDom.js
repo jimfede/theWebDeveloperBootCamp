@@ -1,0 +1,10 @@
+var p1 = document.querySelector("p");
+console.log(p1);
+var p2 = document.querySelector("#first");
+console.log(p2);
+var p3 = document.querySelector(".special");
+console.log(p3);
+var p4 = document.querySelector("p.special");
+console.log(p4);
+var p5 = document.querySelector("body > p");
+console.log(p5);
