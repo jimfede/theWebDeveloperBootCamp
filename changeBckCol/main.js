@@ -1,7 +1,7 @@
 var btn = document.querySelector("button");
+
 // var isBlue = false;
 // btn.addEventListener("click", toggleColor);
-
 // function toggleColor() {
 //     if (isBlue) {
 //         document.body.style.background = "white"
@@ -11,6 +11,7 @@ var btn = document.querySelector("button");
 //     }
 //     isBlue = !isBlue;
 // }
+
 btn.addEventListener("click", function () {
     document.body.classList.toggle("blue");
 });
