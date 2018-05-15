@@ -4,6 +4,7 @@ var squares = document.querySelectorAll(".square");
 var pickedColor = pickColor();
 var colorDisplay = document.getElementById("colorDisplay");
 var messageDisplay = document.getElementById("message");
+var h1 = document.querySelector("h1");
 
 colorDisplay.textContent = pickedColor;
 
@@ -17,6 +18,7 @@ for (var i = 0; i < squares.length; i++) {
         //comparar el color elegido
         if (clickedColor === pickedColor) {
             messageDisplay.textContent = "Correcto!";
+            h1.style.backgroundColor = pickedColor;
             changeColors(pickedColor);
         }
         else {
