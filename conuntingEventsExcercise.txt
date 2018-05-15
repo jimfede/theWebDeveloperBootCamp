@@ -1,0 +1,24 @@
+SOLUCION 1
+function contarEventos (){
+	var domTables = document.querySelectorAll("table");
+	var cantEvent = 0;
+	for (var i = 0; i < domTables.length; i++){
+		console.log("Entro en i: " + i);
+			for(var j = 0; j < domTables[i].rows.length; j++){
+			cantEvent = cantEvent + 1;
+			console.log("Entro en j: " + j);
+		}
+	}
+	console.log(cantEvent);
+}
+
+
+SOLUCION 2
+function contarEventos (){
+	var domTables = document.querySelectorAll("table");
+	var cantEvent = 0;
+	for (var i = 0; i < domTables.length; i++){
+		cantEvent = cantEvent + domTables[i].rows.length;		
+	}
+	console.log(cantEvent);
+}
