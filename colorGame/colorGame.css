@@ -5,7 +5,7 @@ body{
 .square{
     width: 30%;
     background: purple;
-    padding-bottom: 30%; 
+    padding-bottom: 30%;
     float: left;
     margin: 1.66%;
 }
@@ -22,5 +22,9 @@ h1{
 #stripe{
     background: white;
     height: 30px;
-    text-align: center; 
+    text-align: center;
+}
+
+.selected {
+  background: blue; 
 }

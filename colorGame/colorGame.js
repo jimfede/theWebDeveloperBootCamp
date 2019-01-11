@@ -6,13 +6,35 @@ var colorDisplay = document.getElementById("colorDisplay");
 var messageDisplay = document.getElementById("message");
 var h1 = document.querySelector("h1");
 var resetBtn = document.querySelector("#reset");
+var easyBtn = document.querySelector("#easyBtn")
+var hardBtn = document.querySelector("#hardBtn")
+
+easyBtn.addEventListener("click", function(){
+  hardBtn.classList.remove("selected");
+  easyBtn.classList.add("selected");
+  colors = generateRandomColors(3);
+  pickedColor = pickColor();
+  colorDisplay.textContent = pickedColor;
+  for (var i = 0; i < squares.length; i++){
+    if(colors[i]){
+      squares[i].style.background = colors[i];
+    } else {
+      squares[i].style.display = "none";
+    }
+  }
+});
+
+hardBtn.addEventListener("click", function(){
+  hardBtn.classList.add("selected");
+  easyBtn.classList.remove("selected");
+});
 
 resetBtn.addEventListener("click",function(){
    //generar nuevos colores
    colors = generateRandomColors(6);
    //elegir un nuevo color randomico
    pickedColor = pickColor();
-   //cambiar colorDisplay para que coincida con el color elegido 
+   //cambiar colorDisplay para que coincida con el color elegido
    colorDisplay.textContent = pickedColor;
    //cambiar los colores de los cuadrados
    for(var i = 0; i < squares.length; i++){
@@ -98,7 +120,7 @@ function displayColors(){
                 messageDisplay.textContent = "Intente nuevamente";
             }
         });
-    
+
     }
 
 }
