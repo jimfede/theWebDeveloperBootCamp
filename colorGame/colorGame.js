@@ -1,5 +1,5 @@
 var numSquares = 6;
-var colors = generateRandomColors(6);
+var colors = generateRandomColors(numSquares);
 var squares = document.querySelectorAll(".square");
 var pickedColor = pickColor();
 var colorDisplay = document.getElementById("colorDisplay");
@@ -49,7 +49,7 @@ hardBtn.addEventListener("click", function(){
     for(var i = 0; i < squares.length; i++){
       squares[i].style.backgroundColor = colors[i];
     }
-    h1.style.backgroundColor = "#232323";
+    h1.style.backgroundColor = "steelblue";
   });
 
   colorDisplay.textContent = pickedColor;
