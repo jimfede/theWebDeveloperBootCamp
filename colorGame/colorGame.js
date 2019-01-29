@@ -45,11 +45,13 @@ hardBtn.addEventListener("click", function(){
     pickedColor = pickColor();
     //cambiar colorDisplay para que coincida con el color elegido
     colorDisplay.textContent = pickedColor;
+    this.textContent = "Nuevos Colores";
     //cambiar los colores de los cuadrados
     for(var i = 0; i < squares.length; i++){
       squares[i].style.backgroundColor = colors[i];
     }
     h1.style.backgroundColor = "steelblue";
+    messageDisplay.textContent = "";
   });
 
   colorDisplay.textContent = pickedColor;
