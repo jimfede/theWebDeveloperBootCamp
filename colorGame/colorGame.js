@@ -14,10 +14,7 @@ function init (){
   //botones de modo, EventListener
   setupModeButtons();
   setupSquares();
-
-
   reset();
-
 }
 
 function setupSquares(){
@@ -131,7 +128,7 @@ function displayColors(){
         messageDisplay.textContent = "Intente nuevamente";
       }
     });
-    
+
   }
 
 }
