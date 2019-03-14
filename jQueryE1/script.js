@@ -5,7 +5,7 @@ $("#third").css({
     "border-width": "2px",
     "border-style": "solid"
 });
-$("body div:first-child").css("color","pink");
+$("div:first-child").css("color","pink");
 
 
 // var divs = document.querySelectorAll("div");
